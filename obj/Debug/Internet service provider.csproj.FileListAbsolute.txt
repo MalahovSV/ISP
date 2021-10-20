@@ -1,0 +1,11 @@
+C:\ISP\Internet service provider\bin\Debug\Internet service provider.exe.config
+C:\ISP\Internet service provider\bin\Debug\Internet service provider.exe
+C:\ISP\Internet service provider\bin\Debug\Internet service provider.pdb
+C:\ISP\Internet service provider\obj\Debug\Internet service provider.csproj.AssemblyReference.cache
+C:\ISP\Internet service provider\obj\Debug\Internet service provider.csproj.SuggestedBindingRedirects.cache
+C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.AuthorizationWindow.resources
+C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.Properties.Resources.resources
+C:\ISP\Internet service provider\obj\Debug\Internet service provider.csproj.GenerateResource.cache
+C:\ISP\Internet service provider\obj\Debug\Internet service provider.csproj.CoreCompileInputs.cache
+C:\ISP\Internet service provider\obj\Debug\Internet service provider.exe
+C:\ISP\Internet service provider\obj\Debug\Internet service provider.pdb
