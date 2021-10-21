@@ -9,3 +9,5 @@ C:\ISP\Internet service provider\obj\Debug\Internet service provider.csproj.Gene
 C:\ISP\Internet service provider\obj\Debug\Internet service provider.csproj.CoreCompileInputs.cache
 C:\ISP\Internet service provider\obj\Debug\Internet service provider.exe
 C:\ISP\Internet service provider\obj\Debug\Internet service provider.pdb
+C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.AdministratorPanel.resources
+C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.MainWindow.resources

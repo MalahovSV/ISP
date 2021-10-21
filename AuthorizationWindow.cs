@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Internet_service_provider
@@ -35,11 +30,42 @@ namespace Internet_service_provider
             DataTable dt = ds.Tables[0];
             if (dt.Rows.Count != 0)
             {
-                MessageBox.Show(dt.Rows[0].ItemArray[4].ToString());
-            } else
-            {
-                MessageBox.Show("Password is not correct!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (checkDataAccount(dt))
+                {
+                    MessageBox.Show(dt.Rows[0].ItemArray[4].ToString());
+                    switch (dt.Rows[0].ItemArray[4].ToString())
+                    {
+                        case "1":
+                            AdministratorPanel ap = new AdministratorPanel();
+                            ap.Show();
+                            break;
+                        case "2":
+                            MainWindow mw = new MainWindow();
+                            mw.Show();
+                            break;
+                        default:
+                            MessageBox.Show("Invalid data account.", "System error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            break;
+                    }
+                }
             }
+            else
+            {
+                MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool checkDataAccount(DataTable dt)
+        {
+            if (loginField.Text == dt.Rows[0].ItemArray[1].ToString())
+            {
+                if (passwordField.Text == dt.Rows[0].ItemArray[2].ToString())
+                {
+                    return true;
+                }
+                return false;
+            }
+            return false;
         }
     }
 }
