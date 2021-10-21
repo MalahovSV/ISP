@@ -53,7 +53,7 @@
     <Compile Include="AuthorizationWindow.Designer.cs">
       <DependentUpon>AuthorizationWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Connection\ConnectToDataBase.cs" />
+    <Compile Include="Classes\Connection\ConnectionString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AuthorizationWindow.resx">

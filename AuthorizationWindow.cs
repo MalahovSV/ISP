@@ -31,8 +31,15 @@ namespace Internet_service_provider
 
         private void logOnButton_Click(object sender, EventArgs e)
         {
-            ConnectToDataBase connect = new ConnectToDataBase();
-            connect.ConnectRoDataBase();
+            DataSet ds = ConnectionString.GetDataSetFromDataBase($@"select * from User_table where login_user = '{loginField.Text}' and Password_User = '{passwordField.Text}'");
+            DataTable dt = ds.Tables[0];
+            if (dt.Rows.Count != 0)
+            {
+                MessageBox.Show(dt.Rows[0].ItemArray[4].ToString());
+            } else
+            {
+                MessageBox.Show("Password is not correct!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
