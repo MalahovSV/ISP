@@ -11,3 +11,5 @@ C:\ISP\Internet service provider\obj\Debug\Internet service provider.exe
 C:\ISP\Internet service provider\obj\Debug\Internet service provider.pdb
 C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.AdministratorPanel.resources
 C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.MainWindow.resources
+C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.tableContractsControls.resources
+C:\ISP\Internet service provider\obj\Debug\Internet_service_provider.tableClientsControl.resources
